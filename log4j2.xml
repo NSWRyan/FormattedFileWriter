@@ -1,0 +1,23 @@
+
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%logger{36}] %-5level - %msg%n"/>
+        </Console>
+        <!-- <RollingFile name="RollingFile" filePattern="./log/app-%d{MM-dd-yyyy}.log" append="true">
+            <PatternLayout>
+                <pattern>%d [%p] [%t] %m%n</pattern>
+            </PatternLayout>
+            <TimeBasedTriggeringPolicy />
+        </RollingFile> -->
+    </Appenders>
+    <Loggers>
+        <AsyncRoot level="debug">
+            <AppenderRef ref="stdout" />
+            <!-- <AppenderRef ref="RollingFile"/> -->
+        </AsyncRoot>
+        <!-- <Logger name="com.example" level="all" additivity="false">
+            <AppenderRef ref="stdout" />
+        </Logger> -->
+    </Loggers>
+</Configuration>

@@ -1,0 +1,28 @@
+{
+    "namespace": "org.myorganization.mynamespace", 
+    "type": "record",
+    "name": "myrecordname",
+    "fields": [
+        {
+            "name": "myString",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "name": "myInteger",
+            "type": "int"
+        },
+        {
+            "name": "myDateTime",
+            "type": [
+                "null",
+                {
+                    "type": "long",
+                    "logicalType": "timestamp-millis"
+                }
+            ]
+        }
+    ]
+}
