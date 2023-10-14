@@ -1,3 +1,11 @@
+# Description
+This is a library for creating tables in different file formats.
+Supported formats:
+* Avro.
+* CSV.
+* ORC.
+* Parquet.
+
 # Used codes:
 https://gist.github.com/mgraciano/87b284d7d365eda847f045cd3c61f242
 https://github.com/macalbert/WriteParquetJavaDemo/blob/master/src/main/java/com.instarsocial.parquet/App.java
